@@ -153,6 +153,9 @@ MonoBehaviour:
   wave: 0
   enemies: []
   enemy: {fileID: 378340968920191192, guid: edf79c8275368e54896ff641ae138705, type: 3}
+  hp: 0
+  isDead: 0
+  player: {fileID: 1453088786}
 --- !u!4 &422555025
 Transform:
   m_ObjectHideFlags: 0
@@ -322,7 +325,7 @@ GameObject:
   - component: {fileID: 1453088791}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -450,6 +453,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76ede82c727401e478fa27b952d885e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  man: {fileID: 422555024}
 --- !u!1 &1574312085
 GameObject:
   m_ObjectHideFlags: 0
