@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     public GameObject enemy;
     public int hp;
     public int points;//Points for upgrades
-    //public int
+    public int hpPoints;
     public bool isDead;
     public bool waveRunning;
     public GameObject player;
@@ -78,7 +78,7 @@ public class GameManager : MonoBehaviour
             enemies.Add(Instantiate(enemy));
             enemies[i].GetComponent<Enemy>().hp = Random.Range(1, wave + 1);
             enemies[i].GetComponent<Enemy>().hpMax = enemies[i].GetComponent<Enemy>().hp;
-            enemies[i].GetComponent<Enemy>().speed = Random.Range(.002f, .002f*wave);
+            enemies[i].GetComponent<Enemy>().speed = Random.Range(1f, 1f*wave) * Time.deltaTime;
             enemies[i].GetComponent<Enemy>().isLeft = Random.Range(0, 2) != 0;
             if (enemies[i].GetComponent<Enemy>().isLeft)
             {

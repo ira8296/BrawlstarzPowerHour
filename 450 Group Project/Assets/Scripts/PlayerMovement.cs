@@ -20,13 +20,13 @@ public class PlayerMovement : MonoBehaviour
             if (Input.GetKey(KeyCode.LeftArrow))
             {
                 Vector2 temp = this.transform.position;
-                temp.x -= .01f;
+                temp.x -= 3f* Time.deltaTime;
                 this.transform.position = temp;
             }
             if (Input.GetKey(KeyCode.RightArrow))
             {
                 Vector2 temp = this.transform.position;
-                temp.x += .01f;
+                temp.x += 3f * Time.deltaTime;
                 this.transform.position = temp;
             }
             if (Input.GetKeyDown(KeyCode.Space))
@@ -35,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
                 if (this.transform.position.y < -2.9f)
                 {
                     Vector2 temp = this.transform.position;
-                    temp.y += 4f;
+                    temp.y += 4f * Time.deltaTime; ;
                     this.transform.position = temp;
                 }
             }
