@@ -8,9 +8,12 @@ public class GameManager : MonoBehaviour
     public List<GameObject> enemies;
     public GameObject enemy;
     public int hp;
+    public int points;//Points for upgrades
+    //public int
     public bool isDead;
     public bool waveRunning;
     public GameObject player;
+    //Add in things for increasing health
 
     // Start is called before the first frame update
     void Start()
@@ -37,6 +40,7 @@ public class GameManager : MonoBehaviour
                 {
                     if (enemies.Count == 1)
                     {
+                        //Where Wave Ends
                         waveRunning = false;
                     }
                     Destroy(enemies[i]);
