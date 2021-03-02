@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour
                 if (enemies[i].GetComponent<Enemy>().isMoving)
                 {
                     Vector2 temp = enemies[i].transform.position;
-                    temp.x += .001f;
+                    temp.x += enemies[i].GetComponent<Enemy>().speed;
                     enemies[i].transform.position = temp;
                 }
             }
@@ -67,11 +67,24 @@ public class GameManager : MonoBehaviour
     public void GenerateWave()
     {
         wave++;
+        Debug.Log("Wave: " + wave);
         enemies = new List<GameObject>();
         for (int i = 0; i < wave; i++)
         {
             enemies.Add(Instantiate(enemy));
+            enemies[i].GetComponent<Enemy>().hp = Random.Range(1, wave + 1);
+            enemies[i].GetComponent<Enemy>().hpMax = enemies[i].GetComponent<Enemy>().hp;
+            enemies[i].GetComponent<Enemy>().speed = Random.Range(.002f, .002f*wave);
+            enemies[i].GetComponent<Enemy>().isLeft = Random.Range(0, 2) != 0;
+            if (enemies[i].GetComponent<Enemy>().isLeft)
+            {
+                enemies[i].GetComponent<Enemy>().setPosition(new Vector3(-11, -2 + i, 0));
+            }
+            else
+            {
+                enemies[i].GetComponent<Enemy>().setPosition(new Vector3(13, -2 + i, 0));
+                enemies[i].GetComponent<Enemy>().speed = enemies[i].GetComponent<Enemy>().speed * -1;
+            }
         }
-        enemies.Add(Instantiate(enemy, new Vector3(-8f, 5f, 0), Quaternion.identity));
     }
 }
