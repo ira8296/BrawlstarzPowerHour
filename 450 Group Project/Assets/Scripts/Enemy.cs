@@ -5,16 +5,22 @@ using UnityEngine;
 public class Enemy:MonoBehaviour
 {
     //Potentially change from public
-    public int hp;
+    public float hp;
+    public float hpMax;
     public bool isDead;
     public bool isMoving;
     public Transform trans;
+    public bool isColliding;
+    public GameManager man;
+    public bool isLeft;
+    public float speed;
 
     // Start is called before the first frame update
     void Start()
     {
+        man = GameObject.Find("Game Manager").GetComponent<GameManager>();
         isDead = false;
-        hp = 1;
+        isColliding = false;
     }
 
     public void TakeDamage()
@@ -28,6 +34,23 @@ public class Enemy:MonoBehaviour
 
     void OnMouseDown()
     {
-        TakeDamage();
+        if (!man.isDead)
+        {
+            TakeDamage();
+        }
+    }
+
+    public void setPosition(Vector3 vec)
+    {
+        this.transform.position = vec;
+    }
+
+    public void OnTriggerEnter2D(Collider2D col)
+    {
+        if(col.tag == "Player")
+        {
+            Debug.Log("Hit");
+            man.TakeDamage();
+        }
     }
 }
