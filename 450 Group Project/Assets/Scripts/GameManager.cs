@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
     public bool isDead;
     public bool waveRunning;
     public GameObject player;
+
+    public GameObject resetDialogue;
     //Add in things for increasing health
 
     // Start is called before the first frame update
@@ -21,6 +23,7 @@ public class GameManager : MonoBehaviour
         hp = 1;
         isDead = false;
         wave = 0;
+        resetDialogue.SetActive(false);
     }
 
     // Update is called once per frame
@@ -42,6 +45,7 @@ public class GameManager : MonoBehaviour
                     {
                         //Where Wave Ends
                         waveRunning = false;
+                        hp++;
                     }
                     Destroy(enemies[i]);
                     enemies.RemoveAt(i);
@@ -56,6 +60,22 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
+        else 
+        {
+            if (Input.GetKeyDown(KeyCode.R)) ///reset
+            {
+                foreach (GameObject a in enemies)
+                {
+                    Destroy(a);
+                }
+                hp = 1;
+                wave = 0;
+                isDead = false;
+                waveRunning = false;
+                Debug.Log("Reset");
+                resetDialogue.SetActive(false);
+            }
+        }
     }
 
     public void TakeDamage()
@@ -65,6 +85,8 @@ public class GameManager : MonoBehaviour
         {
             isDead = true;
             Debug.Log("Game Over");
+            //reset dialogue
+            resetDialogue.SetActive(true);
         }
     }
 
