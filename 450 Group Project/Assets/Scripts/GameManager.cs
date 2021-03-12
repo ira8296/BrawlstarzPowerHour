@@ -7,9 +7,11 @@ public class GameManager : MonoBehaviour
     public int wave;
     public List<GameObject> enemies;
     public GameObject enemy;
-    public int hp;
+    public int hp;//Current hp
+    public int hpMax;//Max hp
+    public int power;//Attack power (how much damage done per click)
     public int points;//Points for upgrades
-    public int hpPoints;
+    public int hpPoints;//Points for upgrading hp
     public bool isDead;
     public bool waveRunning;
     public GameObject player;
@@ -20,7 +22,9 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        hp = 1;
+        hp = 2;
+        hpMax = 2;
+        power = 1;
         isDead = false;
         wave = 0;
         resetDialogue.SetActive(false);
@@ -45,7 +49,7 @@ public class GameManager : MonoBehaviour
                     {
                         //Where Wave Ends
                         waveRunning = false;
-                        hp++;
+                        //hp++;
                     }
                     Destroy(enemies[i]);
                     enemies.RemoveAt(i);
@@ -95,12 +99,12 @@ public class GameManager : MonoBehaviour
         wave++;
         Debug.Log("Wave: " + wave);
         enemies = new List<GameObject>();
-        for (int i = 0; i < wave; i++)
+        for (int i = 0; i < Random.Range(wave, wave + 3); i++)
         {
             enemies.Add(Instantiate(enemy));
-            enemies[i].GetComponent<Enemy>().hp = Random.Range(1, wave + 1);
+            enemies[i].GetComponent<Enemy>().hp = Random.Range(wave, wave + 1);
             enemies[i].GetComponent<Enemy>().hpMax = enemies[i].GetComponent<Enemy>().hp;
-            enemies[i].GetComponent<Enemy>().speed = Random.Range(1f, 1f*wave) * Time.deltaTime;
+            enemies[i].GetComponent<Enemy>().speed = Random.Range(.5f*wave, 1f*wave) * Time.deltaTime;
             enemies[i].GetComponent<Enemy>().isLeft = Random.Range(0, 2) != 0;
             if (enemies[i].GetComponent<Enemy>().isLeft)
             {

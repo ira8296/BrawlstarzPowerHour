@@ -23,9 +23,9 @@ public class Enemy:MonoBehaviour
         isColliding = false;
     }
 
-    public void TakeDamage()
+    public void TakeDamage(int damage)
     {
-        hp--;
+        hp-=damage;
         if(hp<=0)
         {
             isDead = true;
@@ -36,7 +36,7 @@ public class Enemy:MonoBehaviour
     {
         if (!man.isDead)
         {
-            TakeDamage();
+            TakeDamage(man.power);
         }
     }
 
@@ -51,6 +51,13 @@ public class Enemy:MonoBehaviour
         {
             Debug.Log("Hit");
             man.TakeDamage();
+            StartCoroutine(KillEnemy());
         }
     }
+
+    public IEnumerator KillEnemy()
+    {
+        yield return new WaitForSecondsRealtime(.1f);
+        isDead = true;
+    } 
 }
