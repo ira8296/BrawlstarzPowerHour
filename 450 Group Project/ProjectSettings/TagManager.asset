@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Left Wall
   - Right Wall
+  - BackToTitle
   layers:
   - Default
   - TransparentFX
