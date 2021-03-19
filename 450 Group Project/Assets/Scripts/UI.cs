@@ -8,6 +8,7 @@ public class UI : MonoBehaviour
     public GameManager man;
     public Text wave;
     public Text power;
+    public Text enemies;
     public Slider hp;
 
     // Start is called before the first frame update
@@ -21,6 +22,7 @@ public class UI : MonoBehaviour
     {
         wave.text = "Wave: " + man.wave;
         power.text = "Power: " + man.power;
+        enemies.text = "Enemies: " + man.enemies.Count;
         hp.maxValue = man.hpMax;
         hp.value = man.hp;
     }

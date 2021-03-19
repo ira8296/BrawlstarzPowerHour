@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Return) && !waveRunning)
+        if (Input.GetKeyDown(KeyCode.Return) && !waveRunning)
         {
             waveRunning = true;
             GenerateWave();
@@ -66,7 +66,7 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
-        else 
+        else
         {
             if (Input.GetKeyDown(KeyCode.R)) ///reset
             {
@@ -106,16 +106,23 @@ public class GameManager : MonoBehaviour
             enemies.Add(Instantiate(enemy));
             enemies[i].GetComponent<Enemy>().hp = Random.Range(wave, wave + 1);
             enemies[i].GetComponent<Enemy>().hpMax = enemies[i].GetComponent<Enemy>().hp;
-            enemies[i].GetComponent<Enemy>().speed = Random.Range(2*wave, 3* wave);
+            enemies[i].GetComponent<Enemy>().setSpeed(wave);
             enemies[i].GetComponent<Enemy>().isLeft = Random.Range(0, 2) != 0;
-            enemies[i].GetComponent<Enemy>().type = (EnemyType)Random.Range(0, 2);
-            if (enemies[i].GetComponent<Enemy>().isLeft)
+            enemies[i].GetComponent<Enemy>().type = (EnemyType)Random.Range(0, 3);
+            if (enemies[i].GetComponent<Enemy>().type == EnemyType.Air)
             {
-                enemies[i].GetComponent<Enemy>().setPosition(new Vector3(-11, -2 + i, 0));
+                enemies[i].GetComponent<Enemy>().setPosition(new Vector3(-5 + i, 10, 0));
             }
             else
             {
-                enemies[i].GetComponent<Enemy>().setPosition(new Vector3(13, -2 + i, 0));
+                if (enemies[i].GetComponent<Enemy>().isLeft)
+                {
+                    enemies[i].GetComponent<Enemy>().setPosition(new Vector3(-11, -2 + i, 0));
+                }
+                else
+                {
+                    enemies[i].GetComponent<Enemy>().setPosition(new Vector3(13, -2 + i, 0));
+                }
             }
         }
     }

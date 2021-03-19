@@ -9,7 +9,7 @@ public enum EnemyType
     Air
 }
 
-public class Enemy:MonoBehaviour
+public class Enemy : MonoBehaviour
 {
     //Potentially change from public
     public float hp;
@@ -33,8 +33,8 @@ public class Enemy:MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        hp-=damage;
-        if(hp<=0)
+        hp -= damage;
+        if (hp <= 0)
         {
             isDead = true;
         }
@@ -53,9 +53,18 @@ public class Enemy:MonoBehaviour
         transform.position = vec;
     }
 
+    public void setSpeed(int wave)
+    {
+        speed = Random.Range(1.0f * wave, 3.0f * wave);
+        if (speed > 9)
+        {
+            speed = 9;
+        }
+    }
+
     public void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.tag == "Player")
+        if (col.tag == "Player")
         {
             Debug.Log("Hit");
             man.TakeDamage();
@@ -68,7 +77,12 @@ public class Enemy:MonoBehaviour
         yield return new WaitForSecondsRealtime(.1f);
         isDead = true;
     }
-    
+
+    public void Attack()
+    {
+        //Add code here for ranged attack for zigzag
+    }
+
     public void Move()
     {
         if (man != null)
@@ -77,16 +91,24 @@ public class Enemy:MonoBehaviour
             {
                 transform.position = Vector2.MoveTowards(transform.position, man.player.transform.position, speed * Time.deltaTime);
             }
-            else if(type == EnemyType.Zigzag)
+            else if (type == EnemyType.Air)
             {
-                if(speed >1)
+                if (transform.position.y <= man.player.transform.position.y + 1)
+                {
+                    transform.position = Vector2.MoveTowards(transform.position, man.player.transform.position, speed * Time.deltaTime);
+                }
+            }
+            else if (type == EnemyType.Zigzag)
+            {
+                if (speed > 1)
                 {
                     if (Vector2.Distance(transform.position, man.player.transform.position) < 2f)
                     {
                         speed *= -1;
+                        Attack();
                     }
                 }
-                else if(Vector2.Distance(transform.position, man.player.transform.position) > 3f)
+                else if (Vector2.Distance(transform.position, man.player.transform.position) > 3f)
                 {
                     speed *= -1;
                 }
