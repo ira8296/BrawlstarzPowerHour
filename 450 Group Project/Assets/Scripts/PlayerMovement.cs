@@ -35,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
                 if (this.transform.position.y < -2.9f)
                 {
                     Vector2 temp = this.transform.position;
-                    temp.y += 4f;
+                    temp.y += 4f * Time.deltaTime; ;
                     this.transform.position = temp;
                 }
             }
