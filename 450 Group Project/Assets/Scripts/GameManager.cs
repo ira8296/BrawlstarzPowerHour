@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -19,6 +21,10 @@ public class GameManager : MonoBehaviour
     public GameObject resetDialogue;
     //Add in things for increasing health
 
+
+    //UI on pause and and on gameover
+    private GameObject PauseUI;
+    private GameObject GameOverUI;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,15 +34,24 @@ public class GameManager : MonoBehaviour
         isDead = false;
         wave = 0;
         resetDialogue.SetActive(false);
+        PauseUI = GameObject.Find("Pause");
+        GameOverUI = GameObject.Find("GameOver");
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return) && !waveRunning)
+        if (Input.GetKeyDown(KeyCode.Return) && !waveRunning && !PauseUI.activeSelf)
         {
             waveRunning = true;
             GenerateWave();
+            return;
+        }
+        if (Input.GetKeyDown(KeyCode.P) || Input.GetKeyDown(KeyCode.Escape))
+        {//pause
+            waveRunning = false;
+            PauseUI.SetActive(true);
+            return;
         }
         if (!isDead && waveRunning)
         {
@@ -66,21 +81,21 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
-        else
-        {
-            if (Input.GetKeyDown(KeyCode.R)) ///reset
+        else if (isDead)
+        {///reset
+            foreach (GameObject a in enemies)
             {
-                foreach (GameObject a in enemies)
-                {
-                    Destroy(a);
-                }
-                hp = 1;
-                wave = 0;
-                isDead = false;
-                waveRunning = false;
-                Debug.Log("Reset");
-                resetDialogue.SetActive(false);
+                Destroy(a);
             }
+            hp = 1;
+            hpMax = 1;
+            wave = 0;
+            isDead = false;
+            waveRunning = false;
+
+            //button events are already set up in Scenes Script merely requires GamOverUI activation
+            GameOverUI.SetActive(true);
+            return;
         }
     }
 
