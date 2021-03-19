@@ -2,6 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum EnemyType
+{
+    Normal,
+    Zigzag,
+    Air
+}
+
 public class Enemy:MonoBehaviour
 {
     //Potentially change from public
@@ -14,6 +21,7 @@ public class Enemy:MonoBehaviour
     public GameManager man;
     public bool isLeft;
     public float speed;
+    public EnemyType type;
 
     // Start is called before the first frame update
     void Start()
@@ -42,7 +50,7 @@ public class Enemy:MonoBehaviour
 
     public void setPosition(Vector3 vec)
     {
-        this.transform.position = vec;
+        transform.position = vec;
     }
 
     public void OnTriggerEnter2D(Collider2D col)
@@ -59,5 +67,31 @@ public class Enemy:MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(.1f);
         isDead = true;
-    } 
+    }
+    
+    public void Move()
+    {
+        if (man != null)
+        {
+            if (type == EnemyType.Normal)
+            {
+                transform.position = Vector2.MoveTowards(transform.position, man.player.transform.position, speed * Time.deltaTime);
+            }
+            else if(type == EnemyType.Zigzag)
+            {
+                if(speed >1)
+                {
+                    if (Vector2.Distance(transform.position, man.player.transform.position) < 2f)
+                    {
+                        speed *= -1;
+                    }
+                }
+                else if(Vector2.Distance(transform.position, man.player.transform.position) > 3f)
+                {
+                    speed *= -1;
+                }
+                transform.position = Vector2.MoveTowards(transform.position, man.player.transform.position, speed * Time.deltaTime);
+            }
+        }
+    }
 }

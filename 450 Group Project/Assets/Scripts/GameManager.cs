@@ -41,6 +41,7 @@ public class GameManager : MonoBehaviour
         if (!isDead && waveRunning)
         {
             enemies[0].GetComponent<Enemy>().isMoving = true;
+            enemies[0].GetComponent<Rigidbody2D>().simulated = true;
             for (int i = 0; i < enemies.Count; i++)
             {
                 if (enemies[i].GetComponent<Enemy>().isDead)
@@ -58,9 +59,10 @@ public class GameManager : MonoBehaviour
 
                 if (enemies[i].GetComponent<Enemy>().isMoving)
                 {
-                    Vector2 temp = enemies[i].transform.position;
+                    /*Vector2 temp = enemies[i].transform.position;
                     temp.x += enemies[i].GetComponent<Enemy>().speed;
-                    enemies[i].transform.position = temp;
+                    enemies[i].transform.position = temp;*/
+                    enemies[i].GetComponent<Enemy>().Move();
                 }
             }
         }
@@ -104,8 +106,9 @@ public class GameManager : MonoBehaviour
             enemies.Add(Instantiate(enemy));
             enemies[i].GetComponent<Enemy>().hp = Random.Range(wave, wave + 1);
             enemies[i].GetComponent<Enemy>().hpMax = enemies[i].GetComponent<Enemy>().hp;
-            enemies[i].GetComponent<Enemy>().speed = Random.Range(.5f*wave, 1f*wave) * Time.deltaTime;
+            enemies[i].GetComponent<Enemy>().speed = Random.Range(2*wave, 3* wave);
             enemies[i].GetComponent<Enemy>().isLeft = Random.Range(0, 2) != 0;
+            enemies[i].GetComponent<Enemy>().type = (EnemyType)Random.Range(0, 2);
             if (enemies[i].GetComponent<Enemy>().isLeft)
             {
                 enemies[i].GetComponent<Enemy>().setPosition(new Vector3(-11, -2 + i, 0));
@@ -113,7 +116,6 @@ public class GameManager : MonoBehaviour
             else
             {
                 enemies[i].GetComponent<Enemy>().setPosition(new Vector3(13, -2 + i, 0));
-                enemies[i].GetComponent<Enemy>().speed = enemies[i].GetComponent<Enemy>().speed * -1;
             }
         }
     }
