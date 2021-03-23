@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     public int hpPoints;//Points for upgrading hp
     public bool isDead;
     public bool waveRunning;
+    public bool canMove;
     public GameObject player;
 
     public GameObject resetDialogue;
@@ -32,6 +33,7 @@ public class GameManager : MonoBehaviour
         hpMax = 2;
         power = 1;
         isDead = false;
+        canMove = true;
         wave = 0;
         resetDialogue.SetActive(false);
         PauseUI = GameObject.Find("Pause");
@@ -50,6 +52,7 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.P) || Input.GetKeyDown(KeyCode.Escape))
         {//pause
             waveRunning = false;
+            canMove = false;
             PauseUI.SetActive(true);
             return;
         }
@@ -107,7 +110,7 @@ public class GameManager : MonoBehaviour
             isDead = true;
             Debug.Log("Game Over");
             //reset dialogue
-            resetDialogue.SetActive(true);
+            //resetDialogue.SetActive(true);
         }
     }
 

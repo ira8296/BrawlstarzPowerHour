@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!man.isDead)
+        if (!man.isDead && man.canMove)
         {
             if (Input.GetKey(KeyCode.LeftArrow))
             {

@@ -42,7 +42,7 @@ public class Enemy : MonoBehaviour
 
     void OnMouseDown()
     {
-        if (!man.isDead)
+        if (!man.isDead && man.canMove)
         {
             TakeDamage(man.power);
         }
