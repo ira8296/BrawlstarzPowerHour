@@ -1,0 +1,680 @@
+fileFormatVersion: 2
+guid: b5cd200bfa68f0c4a84fed7dfda0042a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7387074988640080650
+    second: PirateWalkSheet_0
+  - first:
+      213: 3489809138873527318
+    second: PirateWalkSheet_1
+  - first:
+      213: -1872303810012233977
+    second: PirateWalkSheet_2
+  - first:
+      213: -7267039868421048072
+    second: PirateWalkSheet_3
+  - first:
+      213: 7359287120317101586
+    second: PirateWalkSheet_4
+  - first:
+      213: -5695756606271943177
+    second: PirateWalkSheet_5
+  - first:
+      213: 837417987236189
+    second: PirateWalkSheet_6
+  - first:
+      213: 6272755181279070546
+    second: PirateWalkSheet_7
+  - first:
+      213: 5783294380730619372
+    second: PirateWalkSheet_8
+  - first:
+      213: -139595813063720306
+    second: PirateWalkSheet_9
+  - first:
+      213: 4418301462518258103
+    second: PirateWalkSheet_10
+  - first:
+      213: 6625333498212831532
+    second: PirateWalkSheet_11
+  - first:
+      213: -7934738688478804558
+    second: PirateWalkSheet_12
+  - first:
+      213: -3750085116684232335
+    second: PirateWalkSheet_13
+  - first:
+      213: -3776194591385638684
+    second: PirateWalkSheet_14
+  - first:
+      213: -6611415800314043543
+    second: PirateWalkSheet_15
+  - first:
+      213: 8987959229696371536
+    second: PirateWalkSheet_16
+  - first:
+      213: 7267873243629699253
+    second: PirateWalkSheet_17
+  - first:
+      213: 8174129375037040925
+    second: PirateWalkSheet_18
+  - first:
+      213: 5951482943125997937
+    second: PirateWalkSheet_19
+  - first:
+      213: 5687774330027407261
+    second: PirateWalkSheet_20
+  - first:
+      213: -596862620296893435
+    second: PirateWalkSheet_21
+  - first:
+      213: 3038488955144786873
+    second: PirateWalkSheet_22
+  - first:
+      213: 761558224270997214
+    second: PirateWalkSheet_23
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PirateWalkSheet_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 468
+        width: 75
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0390135099248660800000000000000
+      internalID: 7387074988640080650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PirateWalkSheet_1
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 467
+        width: 73
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61ce7780cea4e6030800000000000000
+      internalID: 3489809138873527318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PirateWalkSheet_2
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 467
+        width: 74
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70f3c9cca9d3406e0800000000000000
+      internalID: -1872303810012233977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PirateWalkSheet_3
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 466
+        width: 80
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f8792afdb9462b90800000000000000
+      internalID: -7267039868421048072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PirateWalkSheet_4
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 466
+        width: 87
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 216bb9e05a0712660800000000000000
+      internalID: 7359287120317101586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PirateWalkSheet_5
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 468
+        width: 91
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fd83144b8b94f0b0800000000000000
+      internalID: -5695756606271943177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PirateWalkSheet_6
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 315
+        width: 91
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5168a190a9f20000800000000000000
+      internalID: 837417987236189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PirateWalkSheet_7
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 313
+        width: 87
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25941275a9d4d0750800000000000000
+      internalID: 6272755181279070546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PirateWalkSheet_8
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 313
+        width: 80
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce516fa1993624050800000000000000
+      internalID: 5783294380730619372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PirateWalkSheet_9
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 314
+        width: 74
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e82843ef85e001ef0800000000000000
+      internalID: -139595813063720306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PirateWalkSheet_10
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 314
+        width: 73
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b95dff55c5f05d30800000000000000
+      internalID: 4418301462518258103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PirateWalkSheet_11
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 315
+        width: 75
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c21d87fc6b9e1fb50800000000000000
+      internalID: 6625333498212831532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PirateWalkSheet_12
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 163
+        width: 75
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b50cafe33522e190800000000000000
+      internalID: -7934738688478804558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PirateWalkSheet_13
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 161
+        width: 80
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1799e86847505fbc0800000000000000
+      internalID: -3750085116684232335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PirateWalkSheet_14
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 160
+        width: 86
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e825b9b603489bc0800000000000000
+      internalID: -3776194591385638684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PirateWalkSheet_15
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 160
+        width: 91
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96360efbb588f34a0800000000000000
+      internalID: -6611415800314043543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PirateWalkSheet_16
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 160
+        width: 105
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05beeb59c45abbc70800000000000000
+      internalID: 8987959229696371536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PirateWalkSheet_17
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 163
+        width: 111
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b04d1f453cacd460800000000000000
+      internalID: 7267873243629699253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PirateWalkSheet_18
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 11
+        width: 111
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d192b23bb57507170800000000000000
+      internalID: 8174129375037040925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PirateWalkSheet_19
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 8
+        width: 105
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17942d7543ae79250800000000000000
+      internalID: 5951482943125997937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PirateWalkSheet_20
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 8
+        width: 91
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d977ed73e980fee40800000000000000
+      internalID: 5687774330027407261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PirateWalkSheet_21
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 8
+        width: 86
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50cae71fb9487b7f0800000000000000
+      internalID: -596862620296893435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PirateWalkSheet_22
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 9
+        width: 80
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b35a592b91ea2a20800000000000000
+      internalID: 3038488955144786873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PirateWalkSheet_23
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 11
+        width: 75
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed633798b29919a00800000000000000
+      internalID: 761558224270997214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
