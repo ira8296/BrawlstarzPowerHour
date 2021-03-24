@@ -7,12 +7,10 @@ public class ScenesScript : MonoBehaviour
 {
     //get a current Scene
     Scene currentScene;
-    GameManager man;
 
     void Start()
     {
         currentScene = SceneManager.GetActiveScene();
-        man = GameObject.Find("Game Manager").GetComponent<GameManager>();
         Manager();
     }
 
@@ -37,6 +35,7 @@ public class ScenesScript : MonoBehaviour
             //intialize events
             GameObject PauseUI = GameObject.Find("Pause");
             GameObject GameOverUI = GameObject.Find("GameOver");
+            GameManager man = GameObject.Find("Game Manager").GetComponent<GameManager>();
 
             GameObject[] toTitle = GameObject.FindGameObjectsWithTag("BackToTitle");
             foreach (GameObject b in toTitle)
@@ -49,7 +48,7 @@ public class ScenesScript : MonoBehaviour
                 GameOverUI.SetActive(false);
             });
             GameObject.Find("Play").GetComponent<Button>().onClick.AddListener(delegate {
-                if(man.enemies.Count!=0)
+                if (man.enemies.Count!=0)
                 {
                     man.waveRunning = true;
                 }
