@@ -1368,7 +1368,7 @@ GameObject:
   - component: {fileID: 1009801409}
   - component: {fileID: 1009801408}
   m_Layer: 5
-  m_Name: Power
+  m_Name: PowerButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
