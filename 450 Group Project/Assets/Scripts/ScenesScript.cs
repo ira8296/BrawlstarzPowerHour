@@ -33,20 +33,24 @@ public class ScenesScript : MonoBehaviour
         if (currentScene.name == "Main")
         {
             //intialize events
-            GameObject PauseUI = GameObject.Find("Pause");
-            GameObject GameOverUI = GameObject.Find("GameOver");
             GameManager man = GameObject.Find("Game Manager").GetComponent<GameManager>();
 
+            //back to title screen stuff////////////////////////////////////////////////
             GameObject[] toTitle = GameObject.FindGameObjectsWithTag("BackToTitle");
             foreach (GameObject b in toTitle)
             {
                 b.GetComponent<Button>().onClick.AddListener(delegate { SwitchScene("Title"); });
             }
 
-            //just instantiating some buttons events
+            //gameover event stuff/////////////////////////////////////////////////////////////
+            GameObject GameOverUI = GameObject.Find("GameOver");
             GameObject.Find("Restart").GetComponent<Button>().onClick.AddListener(delegate {
+                man.isDead = false;
                 GameOverUI.SetActive(false);
             });
+            GameOverUI.SetActive(false);
+            //pause event stuff/////////////////////////////////////////////////////////////
+            GameObject PauseUI = GameObject.Find("Pause");
             GameObject.Find("Play").GetComponent<Button>().onClick.AddListener(delegate {
                 if (man.enemies.Count!=0)
                 {
@@ -56,7 +60,26 @@ public class ScenesScript : MonoBehaviour
                 PauseUI.SetActive(false);
             });
             PauseUI.SetActive(false);
-            GameOverUI.SetActive(false);
+
+            //next wave stuff////////////////////////////////////////////////////////////////
+            GameObject NextWaveUI = GameObject.Find("NextWave");
+            GameObject.Find("Health").GetComponent<Button>().onClick.AddListener(delegate {
+                man.hpMax++;
+                man.hp= man.hpMax;
+                man.waveRunning = true;
+                man.GenerateWave();
+                NextWaveUI.SetActive(false);
+                man.canMove=true;
+            });
+            GameObject.Find("PowerButton").GetComponent<Button>().onClick.AddListener(delegate {
+                man.power++;
+                man.waveRunning = true;
+                man.GenerateWave();
+                NextWaveUI.SetActive(false);
+                man.canMove = true;
+            });
+            NextWaveUI.SetActive(false);
+
         }
     }
 

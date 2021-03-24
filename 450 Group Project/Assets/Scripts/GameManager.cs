@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
     //UI on pause and and on gameover
     private GameObject PauseUI;
     private GameObject GameOverUI;
+    private GameObject NextWaveUI;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +39,7 @@ public class GameManager : MonoBehaviour
         resetDialogue.SetActive(false);
         PauseUI = GameObject.Find("Pause");
         GameOverUI = GameObject.Find("GameOver");
+        NextWaveUI = GameObject.Find("NextWave");
     }
 
     // Update is called once per frame
@@ -56,8 +58,24 @@ public class GameManager : MonoBehaviour
             PauseUI.SetActive(true);
             return;
         }
-        if (!isDead && waveRunning)
-        {
+        if (isDead)
+        {///reset
+            foreach (GameObject a in enemies)
+            {
+                Destroy(a);
+            }
+            hp = 2;
+            power = 1;
+            hpMax = 2;
+            wave = 0;
+            waveRunning = false;
+
+            //button events are already set up in Scenes Script merely requires GamOverUI activation
+            GameOverUI.SetActive(true);
+            return;
+        }
+        else if (waveRunning)
+        {//during wave
             enemies[0].GetComponent<Enemy>().isMoving = true;
             enemies[0].GetComponent<Rigidbody2D>().simulated = true;
             for (int i = 0; i < enemies.Count; i++)
@@ -84,21 +102,9 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
-        else if (isDead)
-        {///reset
-            foreach (GameObject a in enemies)
-            {
-                Destroy(a);
-            }
-            hp = 1;
-            hpMax = 1;
-            wave = 0;
-            isDead = false;
-            waveRunning = false;
-
-            //button events are already set up in Scenes Script merely requires GamOverUI activation
-            GameOverUI.SetActive(true);
-            return;
+        else {//no wave running
+            canMove = false;
+            NextWaveUI.SetActive(true);
         }
     }
 
