@@ -5,11 +5,13 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public GameManager man;
+    Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
         man = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -22,12 +24,28 @@ public class PlayerMovement : MonoBehaviour
                 Vector2 temp = this.transform.position;
                 temp.x -= 3f* Time.deltaTime;
                 this.transform.position = temp;
+                if (isFacingRight())
+                {
+                    Vector3 theScale = transform.localScale;
+                    theScale.x *= -1;
+                    transform.localScale = theScale;
+                }
+                anim.SetBool("isWalking", true);
+                Debug.Log("Pirate is Walking");
             }
             if (Input.GetKey(KeyCode.RightArrow))
             {
                 Vector2 temp = this.transform.position;
                 temp.x += 3f * Time.deltaTime;
                 this.transform.position = temp;
+                if (!isFacingRight())
+                {
+                    Vector3 theScale = transform.localScale;
+                    theScale.x *= -1;
+                    transform.localScale = theScale;
+                }
+                anim.SetBool("isWalking", true);
+                Debug.Log("Pirate is Walking");
             }
             if (Input.GetKeyDown(KeyCode.Space))
             {
@@ -39,6 +57,23 @@ public class PlayerMovement : MonoBehaviour
                     this.transform.position = temp;
                 }
             }
+            if (!Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow))
+            {
+                anim.SetBool("isWalking",false);
+                Debug.Log("Pirate is Idle");
+            }
+        }
+    }
+
+    bool isFacingRight()
+    {
+        if(transform.localScale.x > 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
         }
     }
 }
