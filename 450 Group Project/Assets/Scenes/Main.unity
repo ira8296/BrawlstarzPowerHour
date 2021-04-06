@@ -761,6 +761,8 @@ MonoBehaviour:
   waveRunning: 0
   canMove: 0
   player: {fileID: 495058364}
+  particles: {fileID: 3814359872588249007, guid: 65f934b7e56b0bb4aa4ef45839953868,
+    type: 3}
   resetDialogue: {fileID: 6675630553641093255, guid: 8e68b0cdc100b3e498c67cfbf9954a72,
     type: 3}
 --- !u!4 &422555025

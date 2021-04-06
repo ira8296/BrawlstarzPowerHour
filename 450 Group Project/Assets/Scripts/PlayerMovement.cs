@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!man.isDead && man.canMove)
         {
-            if (Input.GetKey(KeyCode.LeftArrow))
+            if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
             {
                 Vector2 temp = this.transform.position;
                 temp.x -= 3f* Time.deltaTime;
@@ -33,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
                 anim.SetBool("isWalking", true);
                 Debug.Log("Pirate is Walking");
             }
-            if (Input.GetKey(KeyCode.RightArrow))
+            if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
             {
                 Vector2 temp = this.transform.position;
                 temp.x += 3f * Time.deltaTime;
@@ -57,10 +57,11 @@ public class PlayerMovement : MonoBehaviour
                     this.transform.position = temp;
                 }
             }
-            if (!Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow))
+            if (!Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow)
+                && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))
             {
                 anim.SetBool("isWalking",false);
-                Debug.Log("Pirate is Idle");
+                //Debug.Log("Pirate is Idle");
             }
         }
     }
