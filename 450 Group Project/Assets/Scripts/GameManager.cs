@@ -18,6 +18,8 @@ public class GameManager : MonoBehaviour
     public bool waveRunning;
     public bool canMove;
     public GameObject player;
+    public GameObject particles;
+    private GameObject particleTemp;
 
     public GameObject resetDialogue;
     //Add in things for increasing health
@@ -88,6 +90,8 @@ public class GameManager : MonoBehaviour
                         waveRunning = false;
                         //hp++;
                     }
+                    Destroy(particleTemp);
+                    particleTemp = Instantiate(particles, enemies[i].transform.position, Quaternion.identity);
                     Destroy(enemies[i]);
                     enemies.RemoveAt(i);
                     continue;
