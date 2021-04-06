@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
     private GameObject PauseUI;
     private GameObject GameOverUI;
     private GameObject NextWaveUI;
+    private GameObject StartWaveUI;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,8 +41,15 @@ public class GameManager : MonoBehaviour
         PauseUI = GameObject.Find("Pause");
         GameOverUI = GameObject.Find("GameOver");
         NextWaveUI = GameObject.Find("NextWave");
+        StartWaveUI = GameObject.Find("Start");
     }
 
+    public void initUI() 
+    {
+        PauseUI.SetActive(false);
+        GameOverUI.SetActive(false);
+        NextWaveUI.SetActive(false);
+    }
     // Update is called once per frame
     void Update()
     {
@@ -64,9 +72,6 @@ public class GameManager : MonoBehaviour
             {
                 Destroy(a);
             }
-            hp = 2;
-            power = 1;
-            hpMax = 2;
             wave = 0;
             waveRunning = false;
 
@@ -104,7 +109,8 @@ public class GameManager : MonoBehaviour
         }
         else {//no wave running
             canMove = false;
-            NextWaveUI.SetActive(true);
+            if (wave == 0) StartWaveUI.SetActive(true);
+            else NextWaveUI.SetActive(true);
         }
     }
 
