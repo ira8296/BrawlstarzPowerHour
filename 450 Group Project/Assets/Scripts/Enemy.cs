@@ -22,11 +22,14 @@ public class Enemy : MonoBehaviour
     public bool isLeft;
     public float speed;
     public EnemyType type;
+    public GameObject proj;
+    public GameObject projectile;
 
     // Start is called before the first frame update
     void Start()
     {
         man = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        proj = man.projectile;
         isDead = false;
         isColliding = false;
     }
@@ -37,6 +40,7 @@ public class Enemy : MonoBehaviour
         if (hp <= 0)
         {
             isDead = true;
+            Destroy(projectile);
         }
     }
 
@@ -68,19 +72,36 @@ public class Enemy : MonoBehaviour
         {
             Debug.Log("Hit");
             man.TakeDamage();
-            StartCoroutine(KillEnemy());
+            if(isLeft)
+            {
+                Vector2 temp = transform.position;
+                temp.x -=.5f;
+                transform.position = temp;
+            }
+            else
+            {
+                Vector2 temp = transform.position;
+                temp.x += .5f;
+                transform.position = temp;
+            }
         }
-    }
-
-    public IEnumerator KillEnemy()
-    {
-        yield return new WaitForSecondsRealtime(.1f);
-        isDead = true;
     }
 
     public void Attack()
     {
         //Add code here for ranged attack for zigzag
+        if (isLeft)
+        {
+            Destroy(projectile);
+            projectile = Instantiate(proj, new Vector2(this.transform.position.x + .5f, this.transform.position.y), Quaternion.identity);
+            projectile.GetComponent<Projectile>().speed = speed;
+        }
+        else
+        {
+            Destroy(projectile);
+            projectile = Instantiate(proj, new Vector2(this.transform.position.x - .5f, this.transform.position.y), Quaternion.identity);
+            projectile.GetComponent<Projectile>().speed = speed;
+        }
     }
 
     public void Move()

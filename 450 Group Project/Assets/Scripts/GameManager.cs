@@ -17,9 +17,11 @@ public class GameManager : MonoBehaviour
     public bool isDead;
     public bool waveRunning;
     public bool canMove;
+    public bool invincible;
     public GameObject player;
     public GameObject particles;
     private GameObject particleTemp;
+    public GameObject projectile;
 
     public GameObject resetDialogue;
     //Add in things for increasing health
@@ -29,7 +31,7 @@ public class GameManager : MonoBehaviour
     private GameObject PauseUI;
     private GameObject GameOverUI;
     private GameObject NextWaveUI;
-    private GameObject StartWaveUI;
+    public GameObject StartWaveUI;
     // Start is called before the first frame update
     void Start()
     {
@@ -120,14 +122,25 @@ public class GameManager : MonoBehaviour
 
     public void TakeDamage()
     {
-        hp--;
-        if (hp <= 0)
+        if (!invincible)
         {
-            isDead = true;
-            Debug.Log("Game Over");
-            //reset dialogue
-            //resetDialogue.SetActive(true);
+            StartCoroutine(Invincible());
+            hp--;
+            if (hp <= 0)
+            {
+                isDead = true;
+                Debug.Log("Game Over");
+                //reset dialogue
+                //resetDialogue.SetActive(true);
+            }
         }
+    }
+
+    public IEnumerator Invincible()
+    {
+        invincible = true;
+        yield return new WaitForSeconds(.5f);
+        invincible = false;
     }
 
     public void GenerateWave()
