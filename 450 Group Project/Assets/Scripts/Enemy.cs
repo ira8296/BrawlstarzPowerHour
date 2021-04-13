@@ -24,6 +24,7 @@ public class Enemy : MonoBehaviour
     public EnemyType type;
     public GameObject proj;
     public GameObject projectile;
+    public GameObject shield;
 
     // Start is called before the first frame update
     void Start()
@@ -40,6 +41,11 @@ public class Enemy : MonoBehaviour
         if (hp <= 0)
         {
             isDead = true;
+            GetComponent<Renderer>().enabled = false;//disable it so can spawn shield if needed
+            if (0.2f>=Random.Range(0.0f,1.0f))
+            {
+                Instantiate(shield,gameObject.transform.position,Quaternion.identity);
+            }
             Destroy(projectile);
         }
     }
@@ -84,6 +90,10 @@ public class Enemy : MonoBehaviour
                 temp.x += .5f;
                 transform.position = temp;
             }
+        }
+        if (col.tag == "Shield")
+        {
+            Physics2D.IgnoreCollision(col,gameObject.GetComponent<Collider2D>());
         }
     }
 

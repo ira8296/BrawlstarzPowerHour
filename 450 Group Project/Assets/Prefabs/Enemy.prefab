@@ -108,9 +108,9 @@ GameObject:
   - component: {fileID: 9167889205412608780}
   - component: {fileID: 752963337586236750}
   - component: {fileID: 5897512316856156467}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -248,6 +248,10 @@ MonoBehaviour:
   man: {fileID: 0}
   isLeft: 0
   speed: 0
+  type: 0
+  proj: {fileID: 0}
+  projectile: {fileID: 0}
+  shield: {fileID: 895692938607929528, guid: 7a34e3af881bbff4b93461bab1453d1f, type: 3}
 --- !u!61 &5897512316856156467
 BoxCollider2D:
   m_ObjectHideFlags: 0

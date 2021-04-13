@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Left Wall
   - Right Wall
+  - BackToTitle
+  - Shield
   layers:
   - Default
   - TransparentFX
@@ -15,8 +17,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Enemy
+  - Shield
   - 
   - 
   - 
