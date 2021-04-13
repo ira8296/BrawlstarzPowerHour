@@ -913,6 +913,7 @@ MonoBehaviour:
   isDead: 0
   waveRunning: 0
   canMove: 0
+  invincible: 0
   player: {fileID: 495058364}
   particles: {fileID: 3814359872588249007, guid: 65f934b7e56b0bb4aa4ef45839953868,
     type: 3}

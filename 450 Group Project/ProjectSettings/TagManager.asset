@@ -8,6 +8,7 @@ TagManager:
   - Right Wall
   - BackToTitle
   - Shield
+  - Enemy
   layers:
   - Default
   - TransparentFX
