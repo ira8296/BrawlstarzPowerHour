@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
     public GameObject projectile;
 
     public GameObject resetDialogue;
+
     //Add in things for increasing health
 
 
@@ -146,6 +147,25 @@ public class GameManager : MonoBehaviour
     public void GenerateWave()
     {
         wave++;
+
+        //change background
+        if (wave%2==0){
+            int newBackgroundInteger = Random.Range(0, 2);
+            string imgName = "island";//default
+            switch(newBackgroundInteger)
+            {
+                case 0://will stay at default
+                    break;
+                case 1:
+                    imgName = "docks";
+                    break;
+                case 2:
+                    imgName = "plains";
+                    break;
+            }
+            GameObject.Find("background").GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>(imgName);//will only work if imgs are in resources folder
+        }
+
         Debug.Log("Wave: " + wave);
         enemies = new List<GameObject>();
         for (int i = 0; i < Random.Range(wave, wave + 3); i++)
