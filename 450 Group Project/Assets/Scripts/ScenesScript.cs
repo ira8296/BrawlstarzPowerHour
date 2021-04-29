@@ -28,7 +28,10 @@ public class ScenesScript : MonoBehaviour
         { //set up title events
             //search for button
             Button toMain = GameObject.Find("Button").GetComponent<Button>();
-            toMain.onClick.AddListener(delegate { SwitchScene("Main"); });
+            toMain.onClick.AddListener(delegate {
+                SwitchScene("Main");
+                FindObjectOfType<AudioManager>().Play("Click");
+        });
         }
         if (currentScene.name == "Main")
         {
@@ -66,6 +69,7 @@ public class ScenesScript : MonoBehaviour
         //want to fill event with only stuff pertinant to it
         //generate functions to add to event
         List<Action> functions = new List<Action>();//essentially holds delegates ()=> is a shorthand
+        functions.Add(() => FindObjectOfType<AudioManager>().Play("Click")); 
         if (hp != null) { functions.Add(() => man.hp = (int)hp); }
         if (hpMax != null) { functions.Add(() =>man.hpMax = (int)hpMax); }
         if (power != null) { functions.Add(() =>man.power = (int)power); }

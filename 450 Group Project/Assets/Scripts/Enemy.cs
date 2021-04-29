@@ -52,6 +52,7 @@ public class Enemy : MonoBehaviour
 
     void OnMouseDown()
     {
+        FindObjectOfType<AudioManager>().Play("PlayerAttack");
         if (!man.isDead && man.canMove)
         {
             TakeDamage(man.power);

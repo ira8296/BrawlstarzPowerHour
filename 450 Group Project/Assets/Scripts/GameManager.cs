@@ -96,6 +96,7 @@ public class GameManager : MonoBehaviour
                     {
                         //Where Wave Ends
                         waveRunning = false;
+                        FindObjectOfType<AudioManager>().Play("WaveFinish");
                         //hp++;
                     }
                     Destroy(particleTemp);
@@ -131,6 +132,14 @@ public class GameManager : MonoBehaviour
             {
                 isDead = true;
                 Debug.Log("Game Over");
+
+                FindObjectOfType<AudioManager>().Play("GameOver");
+
+                GameObject[] shields = GameObject.FindGameObjectsWithTag("Shield");
+                foreach(GameObject s in shields)
+                {
+                    Destroy(s);
+                }
                 //reset dialogue
                 //resetDialogue.SetActive(true);
             }

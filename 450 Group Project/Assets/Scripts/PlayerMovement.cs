@@ -31,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
                     transform.localScale = theScale;
                 }
                 anim.SetBool("isWalking", true);
-                Debug.Log("Pirate is Walking");
+                //Debug.Log("Pirate is Walking");
             }
             if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
             {
@@ -45,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
                     transform.localScale = theScale;
                 }
                 anim.SetBool("isWalking", true);
-                Debug.Log("Pirate is Walking");
+                //Debug.Log("Pirate is Walking");
             }
             if (Input.GetKeyDown(KeyCode.Space))
             {
