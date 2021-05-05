@@ -1,0 +1,656 @@
+fileFormatVersion: 2
+guid: cfd18269c5b3f2949b4f7b645b0c8fc5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8540817200500738783
+    second: NinjaWalkSheet_0
+  - first:
+      213: -290640467326862889
+    second: NinjaWalkSheet_1
+  - first:
+      213: 1737090335121607230
+    second: NinjaWalkSheet_2
+  - first:
+      213: 8722899774546628341
+    second: NinjaWalkSheet_3
+  - first:
+      213: 7119635196788898506
+    second: NinjaWalkSheet_4
+  - first:
+      213: 7932365636224121739
+    second: NinjaWalkSheet_5
+  - first:
+      213: 3435172780020326594
+    second: NinjaWalkSheet_6
+  - first:
+      213: 1776749695927904643
+    second: NinjaWalkSheet_7
+  - first:
+      213: 7120458928083425219
+    second: NinjaWalkSheet_8
+  - first:
+      213: 8512077975976528825
+    second: NinjaWalkSheet_9
+  - first:
+      213: -516221418912373919
+    second: NinjaWalkSheet_10
+  - first:
+      213: -907061652203976211
+    second: NinjaWalkSheet_11
+  - first:
+      213: -4230521221199499485
+    second: NinjaWalkSheet_12
+  - first:
+      213: 1428621632429339642
+    second: NinjaWalkSheet_13
+  - first:
+      213: -1078013547980272858
+    second: NinjaWalkSheet_14
+  - first:
+      213: 252245509046598698
+    second: NinjaWalkSheet_15
+  - first:
+      213: 4167174150066157940
+    second: NinjaWalkSheet_16
+  - first:
+      213: -3372204578060372826
+    second: NinjaWalkSheet_17
+  - first:
+      213: -471440441631477215
+    second: NinjaWalkSheet_18
+  - first:
+      213: 6633454331477295621
+    second: NinjaWalkSheet_19
+  - first:
+      213: 4924600999884757172
+    second: NinjaWalkSheet_20
+  - first:
+      213: -5748050840040008335
+    second: NinjaWalkSheet_21
+  - first:
+      213: -3586848997044441778
+    second: NinjaWalkSheet_22
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: NinjaWalkSheet_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 467
+        width: 91
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1257b90e10ce87980800000000000000
+      internalID: -8540817200500738783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NinjaWalkSheet_1
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 466
+        width: 88
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d9f0abe80077fbf0800000000000000
+      internalID: -290640467326862889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NinjaWalkSheet_2
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 466
+        width: 86
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3a00bfc4726b1810800000000000000
+      internalID: 1737090335121607230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NinjaWalkSheet_3
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 466
+        width: 83
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fecf290127fd0970800000000000000
+      internalID: 8722899774546628341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NinjaWalkSheet_4
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 466
+        width: 83
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aca78f27d760ec260800000000000000
+      internalID: 7119635196788898506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NinjaWalkSheet_5
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 467
+        width: 83
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8b77a7c48c651e60800000000000000
+      internalID: 7932365636224121739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NinjaWalkSheet_6
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 313
+        width: 83
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c0e33f617f2caf20800000000000000
+      internalID: 3435172780020326594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NinjaWalkSheet_7
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 309
+        width: 83
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 389e0905f6848a810800000000000000
+      internalID: 1776749695927904643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NinjaWalkSheet_8
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 312
+        width: 83
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c7db265ba3f0d260800000000000000
+      internalID: 7120458928083425219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NinjaWalkSheet_9
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 311
+        width: 86
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bbc18af1d9f02670800000000000000
+      internalID: 8512077975976528825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NinjaWalkSheet_10
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 311
+        width: 88
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 163a744ca5306d8f0800000000000000
+      internalID: -516221418912373919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NinjaWalkSheet_11
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 313
+        width: 91
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de9c00fab387963f0800000000000000
+      internalID: -907061652203976211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NinjaWalkSheet_12
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 154
+        width: 91
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32fe6a31d5b2a45c0800000000000000
+      internalID: -4230521221199499485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NinjaWalkSheet_13
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 153
+        width: 95
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af3b3673ecb73d310800000000000000
+      internalID: 1428621632429339642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NinjaWalkSheet_14
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 153
+        width: 98
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62bc391c3602a01f0800000000000000
+      internalID: -1078013547980272858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NinjaWalkSheet_15
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 154
+        width: 104
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2cf8ea34f7208300800000000000000
+      internalID: 252245509046598698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NinjaWalkSheet_16
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 154
+        width: 112
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47932e39fc6c4d930800000000000000
+      internalID: 4167174150066157940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NinjaWalkSheet_17
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 154
+        width: 119
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a4f3ce8dc58331d0800000000000000
+      internalID: -3372204578060372826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NinjaWalkSheet_18
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 5
+        width: 119
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1227dc78a6b1579f0800000000000000
+      internalID: -471440441631477215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NinjaWalkSheet_19
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 5
+        width: 216
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5020b75a193ce0c50800000000000000
+      internalID: 6633454331477295621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NinjaWalkSheet_20
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 4
+        width: 98
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b81aaa8482b75440800000000000000
+      internalID: 4924600999884757172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NinjaWalkSheet_21
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 4
+        width: 95
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17597882732da30b0800000000000000
+      internalID: -5748050840040008335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NinjaWalkSheet_22
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 5
+        width: 91
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4d233457d3f83ec0800000000000000
+      internalID: -3586848997044441778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
