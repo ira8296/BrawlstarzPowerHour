@@ -159,7 +159,7 @@ public class GameManager : MonoBehaviour
 
         //change background
         if (wave%2==0){
-            int newBackgroundInteger = Random.Range(0, 2);
+            int newBackgroundInteger = Random.Range(0, 3);
             string imgName = "island";//default
             switch(newBackgroundInteger)
             {
@@ -170,6 +170,12 @@ public class GameManager : MonoBehaviour
                     break;
                 case 2:
                     imgName = "plains";
+                    break;
+                case 3:
+                    imgName = "mountain";
+                    break;
+                case 4:
+                    imgName = "ship-deck";
                     break;
             }
             GameObject.Find("background").GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>(imgName);//will only work if imgs are in resources folder
@@ -198,6 +204,7 @@ public class GameManager : MonoBehaviour
                 else
                 {
                     enemies[i].GetComponent<Enemy>().setPosition(new Vector3(13, -2 + i, 0));
+                    //enemies[i].GetComponent<SpriteRenderer>().flipX = true;
                 }
             }
         }

@@ -119,7 +119,7 @@ public class Enemy : MonoBehaviour
     {
         if (man != null)
         {
-            if (Vector2.MoveTowards(transform.position, man.player.transform.position, speed * Time.deltaTime).x > 0)
+            if (man.player.transform.position.x < transform.position.x)
             {
                 SpriteRenderer theSprite = gameObject.GetComponent<SpriteRenderer>();
                 theSprite.flipX = true;
