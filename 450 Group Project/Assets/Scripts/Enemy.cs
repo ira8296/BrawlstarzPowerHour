@@ -127,7 +127,7 @@ public class Enemy : MonoBehaviour
             else
             {
                 SpriteRenderer theSprite = gameObject.GetComponent<SpriteRenderer>();
-                theSprite.flipX = true;
+                theSprite.flipX = false;
             }
 
             if (type == EnemyType.Normal)
