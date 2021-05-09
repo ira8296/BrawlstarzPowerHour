@@ -71,6 +71,78 @@ TextureImporter:
   - first:
       213: -3586848997044441778
     second: NinjaWalkSheet_22
+  - first:
+      213: 6716882954073811366
+    second: NinjaWalkSheet_0
+  - first:
+      213: -1584875844933126685
+    second: NinjaWalkSheet_1
+  - first:
+      213: 3681845659985189954
+    second: NinjaWalkSheet_2
+  - first:
+      213: 4354206380044037339
+    second: NinjaWalkSheet_3
+  - first:
+      213: -997189874872848499
+    second: NinjaWalkSheet_4
+  - first:
+      213: 5098629172343054617
+    second: NinjaWalkSheet_5
+  - first:
+      213: -8280906243231248128
+    second: NinjaWalkSheet_6
+  - first:
+      213: -5477561779374523138
+    second: NinjaWalkSheet_7
+  - first:
+      213: 48223413042179337
+    second: NinjaWalkSheet_8
+  - first:
+      213: 3237138039554326594
+    second: NinjaWalkSheet_9
+  - first:
+      213: -1036855613900332220
+    second: NinjaWalkSheet_10
+  - first:
+      213: 8686590107510625956
+    second: NinjaWalkSheet_11
+  - first:
+      213: -2882716490423010133
+    second: NinjaWalkSheet_12
+  - first:
+      213: -3317392868413305047
+    second: NinjaWalkSheet_13
+  - first:
+      213: -7079597043728951045
+    second: NinjaWalkSheet_14
+  - first:
+      213: -8338316549787942504
+    second: NinjaWalkSheet_15
+  - first:
+      213: 2039155770140285629
+    second: NinjaWalkSheet_16
+  - first:
+      213: -3789634137582465543
+    second: NinjaWalkSheet_17
+  - first:
+      213: -60831040867933564
+    second: NinjaWalkSheet_18
+  - first:
+      213: 120600606865299565
+    second: NinjaWalkSheet_19
+  - first:
+      213: 688030857207691691
+    second: NinjaWalkSheet_20
+  - first:
+      213: 8164625977405641706
+    second: NinjaWalkSheet_21
+  - first:
+      213: -7246239342358541648
+    second: NinjaWalkSheet_22
+  - first:
+      213: 7398997513057828290
+    second: NinjaWalkSheet_23
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -159,10 +231,10 @@ TextureImporter:
       name: NinjaWalkSheet_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 467
-        width: 91
-        height: 138
+        x: 9
+        y: 465
+        width: 94
+        height: 142
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,8 +242,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1257b90e10ce87980800000000000000
-      internalID: -8540817200500738783
+      spriteID: 6a9227b8579273d50800000000000000
+      internalID: 6716882954073811366
       vertices: []
       indices: 
       edges: []
@@ -180,10 +252,10 @@ TextureImporter:
       name: NinjaWalkSheet_1
       rect:
         serializedVersion: 2
-        x: 122
-        y: 466
-        width: 88
-        height: 139
+        x: 120
+        y: 465
+        width: 92
+        height: 143
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,8 +263,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d9f0abe80077fbf0800000000000000
-      internalID: -290640467326862889
+      spriteID: 3e5f9a9e0d3610ae0800000000000000
+      internalID: -1584875844933126685
       vertices: []
       indices: 
       edges: []
@@ -201,10 +273,10 @@ TextureImporter:
       name: NinjaWalkSheet_2
       rect:
         serializedVersion: 2
-        x: 228
-        y: 466
-        width: 86
-        height: 139
+        x: 227
+        y: 464
+        width: 89
+        height: 144
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,8 +284,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3a00bfc4726b1810800000000000000
-      internalID: 1737090335121607230
+      spriteID: 24c1b39de1b881330800000000000000
+      internalID: 3681845659985189954
       vertices: []
       indices: 
       edges: []
@@ -222,10 +294,10 @@ TextureImporter:
       name: NinjaWalkSheet_3
       rect:
         serializedVersion: 2
-        x: 344
+        x: 343
         y: 466
-        width: 83
-        height: 139
+        width: 86
+        height: 143
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -233,8 +305,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fecf290127fd0970800000000000000
-      internalID: 8722899774546628341
+      spriteID: bdca34112af3d6c30800000000000000
+      internalID: 4354206380044037339
       vertices: []
       indices: 
       edges: []
@@ -244,9 +316,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 451
-        y: 466
-        width: 83
-        height: 139
+        y: 465
+        width: 86
+        height: 143
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -254,8 +326,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aca78f27d760ec260800000000000000
-      internalID: 7119635196788898506
+      spriteID: d8f669697154922f0800000000000000
+      internalID: -997189874872848499
       vertices: []
       indices: 
       edges: []
@@ -264,10 +336,10 @@ TextureImporter:
       name: NinjaWalkSheet_5
       rect:
         serializedVersion: 2
-        x: 571
-        y: 467
-        width: 83
-        height: 138
+        x: 570
+        y: 465
+        width: 84
+        height: 142
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -275,8 +347,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8b77a7c48c651e60800000000000000
-      internalID: 7932365636224121739
+      spriteID: 911a3f2f738f1c640800000000000000
+      internalID: 5098629172343054617
       vertices: []
       indices: 
       edges: []
@@ -285,10 +357,10 @@ TextureImporter:
       name: NinjaWalkSheet_6
       rect:
         serializedVersion: 2
-        x: 10
+        x: 7
         y: 313
-        width: 83
-        height: 138
+        width: 91
+        height: 141
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -296,8 +368,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c0e33f617f2caf20800000000000000
-      internalID: 3435172780020326594
+      spriteID: 00113e955af441d80800000000000000
+      internalID: -8280906243231248128
       vertices: []
       indices: 
       edges: []
@@ -307,9 +379,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 118
-        y: 309
-        width: 83
-        height: 139
+        y: 308
+        width: 89
+        height: 143
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -317,8 +389,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 389e0905f6848a810800000000000000
-      internalID: 1776749695927904643
+      spriteID: efcff11459acbf3b0800000000000000
+      internalID: -5477561779374523138
       vertices: []
       indices: 
       edges: []
@@ -327,10 +399,10 @@ TextureImporter:
       name: NinjaWalkSheet_8
       rect:
         serializedVersion: 2
-        x: 223
-        y: 312
-        width: 83
-        height: 139
+        x: 222
+        y: 310
+        width: 89
+        height: 145
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -338,8 +410,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c7db265ba3f0d260800000000000000
-      internalID: 7120458928083425219
+      spriteID: 90d6c3c40f25ba000800000000000000
+      internalID: 48223413042179337
       vertices: []
       indices: 
       edges: []
@@ -348,10 +420,10 @@ TextureImporter:
       name: NinjaWalkSheet_9
       rect:
         serializedVersion: 2
-        x: 343
-        y: 311
-        width: 86
-        height: 139
+        x: 342
+        y: 308
+        width: 91
+        height: 146
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -359,8 +431,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9bbc18af1d9f02670800000000000000
-      internalID: 8512077975976528825
+      spriteID: 2404a8855ef9cec20800000000000000
+      internalID: 3237138039554326594
       vertices: []
       indices: 
       edges: []
@@ -370,9 +442,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 451
-        y: 311
-        width: 88
-        height: 139
+        y: 308
+        width: 93
+        height: 145
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -380,8 +452,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 163a744ca5306d8f0800000000000000
-      internalID: -516221418912373919
+      spriteID: 443e91a00595c91f0800000000000000
+      internalID: -1036855613900332220
       vertices: []
       indices: 
       edges: []
@@ -391,9 +463,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 568
-        y: 313
-        width: 91
-        height: 138
+        y: 310
+        width: 93
+        height: 143
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -401,8 +473,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de9c00fab387963f0800000000000000
-      internalID: -907061652203976211
+      spriteID: 4a6d793eda7fc8870800000000000000
+      internalID: 8686590107510625956
       vertices: []
       indices: 
       edges: []
@@ -411,10 +483,10 @@ TextureImporter:
       name: NinjaWalkSheet_12
       rect:
         serializedVersion: 2
-        x: 11
+        x: 9
         y: 154
-        width: 91
-        height: 138
+        width: 94
+        height: 142
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -422,8 +494,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32fe6a31d5b2a45c0800000000000000
-      internalID: -4230521221199499485
+      spriteID: bacfc2010a88ef7d0800000000000000
+      internalID: -2882716490423010133
       vertices: []
       indices: 
       edges: []
@@ -433,9 +505,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 120
-        y: 153
-        width: 95
-        height: 139
+        y: 152
+        width: 97
+        height: 141
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -443,8 +515,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af3b3673ecb73d310800000000000000
-      internalID: 1428621632429339642
+      spriteID: 92f8fc133c046f1d0800000000000000
+      internalID: -3317392868413305047
       vertices: []
       indices: 
       edges: []
@@ -453,10 +525,10 @@ TextureImporter:
       name: NinjaWalkSheet_14
       rect:
         serializedVersion: 2
-        x: 225
-        y: 153
-        width: 98
-        height: 139
+        x: 224
+        y: 151
+        width: 102
+        height: 145
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -464,8 +536,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62bc391c3602a01f0800000000000000
-      internalID: -1078013547980272858
+      spriteID: bf851af7ff730cd90800000000000000
+      internalID: -7079597043728951045
       vertices: []
       indices: 
       edges: []
@@ -474,10 +546,10 @@ TextureImporter:
       name: NinjaWalkSheet_15
       rect:
         serializedVersion: 2
-        x: 341
+        x: 339
         y: 154
-        width: 104
-        height: 139
+        width: 107
+        height: 141
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -485,8 +557,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2cf8ea34f7208300800000000000000
-      internalID: 252245509046598698
+      spriteID: 8910129b649584c80800000000000000
+      internalID: -8338316549787942504
       vertices: []
       indices: 
       edges: []
@@ -495,10 +567,10 @@ TextureImporter:
       name: NinjaWalkSheet_16
       rect:
         serializedVersion: 2
-        x: 447
+        x: 446
         y: 154
-        width: 112
-        height: 139
+        width: 114
+        height: 142
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -506,8 +578,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47932e39fc6c4d930800000000000000
-      internalID: 4167174150066157940
+      spriteID: dba56e87e598c4c10800000000000000
+      internalID: 2039155770140285629
       vertices: []
       indices: 
       edges: []
@@ -516,10 +588,10 @@ TextureImporter:
       name: NinjaWalkSheet_17
       rect:
         serializedVersion: 2
-        x: 562
+        x: 561
         y: 154
         width: 119
-        height: 139
+        height: 142
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -527,8 +599,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a4f3ce8dc58331d0800000000000000
-      internalID: -3372204578060372826
+      spriteID: 9fd04b884d3886bc0800000000000000
+      internalID: -3789634137582465543
       vertices: []
       indices: 
       edges: []
@@ -537,9 +609,9 @@ TextureImporter:
       name: NinjaWalkSheet_18
       rect:
         serializedVersion: 2
-        x: 1
-        y: 5
-        width: 119
+        x: 0
+        y: 6
+        width: 120
         height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -548,8 +620,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1227dc78a6b1579f0800000000000000
-      internalID: -471440441631477215
+      spriteID: 482efb99d72e72ff0800000000000000
+      internalID: -60831040867933564
       vertices: []
       indices: 
       edges: []
@@ -560,8 +632,8 @@ TextureImporter:
         serializedVersion: 2
         x: 121
         y: 5
-        width: 216
-        height: 139
+        width: 112
+        height: 141
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -569,8 +641,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5020b75a193ce0c50800000000000000
-      internalID: 6633454331477295621
+      spriteID: d6817ebec957ca100800000000000000
+      internalID: 120600606865299565
       vertices: []
       indices: 
       edges: []
@@ -579,10 +651,10 @@ TextureImporter:
       name: NinjaWalkSheet_20
       rect:
         serializedVersion: 2
-        x: 344
+        x: 233
         y: 4
-        width: 98
-        height: 139
+        width: 104
+        height: 142
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -590,8 +662,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b81aaa8482b75440800000000000000
-      internalID: 4924600999884757172
+      spriteID: ba93f565b606c8900800000000000000
+      internalID: 688030857207691691
       vertices: []
       indices: 
       edges: []
@@ -600,10 +672,10 @@ TextureImporter:
       name: NinjaWalkSheet_21
       rect:
         serializedVersion: 2
-        x: 465
-        y: 4
-        width: 95
-        height: 139
+        x: 345
+        y: 2
+        width: 99
+        height: 143
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -611,8 +683,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17597882732da30b0800000000000000
-      internalID: -5748050840040008335
+      spriteID: ae3903381149e4170800000000000000
+      internalID: 8164625977405641706
       vertices: []
       indices: 
       edges: []
@@ -621,10 +693,10 @@ TextureImporter:
       name: NinjaWalkSheet_22
       rect:
         serializedVersion: 2
-        x: 571
-        y: 5
-        width: 91
-        height: 138
+        x: 464
+        y: 2
+        width: 98
+        height: 143
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -632,8 +704,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4d233457d3f83ec0800000000000000
-      internalID: -3586848997044441778
+      spriteID: 0ba4249d5bf207b90800000000000000
+      internalID: -7246239342358541648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NinjaWalkSheet_23
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 5
+        width: 93
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cd7fcb59058ea660800000000000000
+      internalID: 7398997513057828290
       vertices: []
       indices: 
       edges: []

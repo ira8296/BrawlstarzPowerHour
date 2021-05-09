@@ -119,6 +119,17 @@ public class Enemy : MonoBehaviour
     {
         if (man != null)
         {
+            if (Vector2.MoveTowards(transform.position, man.player.transform.position, speed * Time.deltaTime).x > 0)
+            {
+                SpriteRenderer theSprite = gameObject.GetComponent<SpriteRenderer>();
+                theSprite.flipX = true;
+            }
+            else
+            {
+                SpriteRenderer theSprite = gameObject.GetComponent<SpriteRenderer>();
+                theSprite.flipX = true;
+            }
+
             if (type == EnemyType.Normal)
             {
                 transform.position = Vector2.MoveTowards(transform.position, man.player.transform.position, speed * Time.deltaTime);
